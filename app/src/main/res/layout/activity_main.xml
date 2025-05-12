@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.databaseexample.MainActivity">
+
+    <EditText
+        android:id="@+id/InputName"
+        android:layout_width="209dp"
+        android:layout_height="71dp"
+        android:hint="nameInput" />
+
+    <EditText
+        android:id="@+id/InputAge"
+        android:layout_width="192dp"
+        android:layout_height="68dp"
+        android:hint="AgeInput" />
+
+    <Button
+        android:id="@+id/listButton"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:onClick="doList"
+        android:text="List" />
+
+    <Button
+        android:id="@+id/queryButton"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:onClick="doQuery"
+        android:text="Query" />
+
+    <Button
+        android:id="@+id/insertButton"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:onClick="doInsert"
+        android:text="Insert" />
+
+    <TextView
+        android:id="@+id/names"
+        android:layout_width="148dp"
+        android:layout_height="32dp"
+        android:text="Names"
+        android:textColor="#2196F3"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ages"
+        android:layout_width="154dp"
+        android:layout_height="35dp"
+        android:text="Ages"
+        android:textColor="#03A9F4"
+        android:textStyle="bold" />
+
+</LinearLayout>
